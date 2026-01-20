@@ -1,39 +1,46 @@
+import React from 'react'
 import { useState } from 'react'
 
-import './App.css'
 
 function App() {
-  let [counter, setCounter] = useState(5)
 
-  const addValue = () => {
-    if(counter === 10){
-      setCounter(10)
-      return
-    } else {
-       counter = counter + 1;
-    setCounter(counter)
-    }
-  }
+  const [color, setColor] = useState("blue");
 
-  const subValue = () => {
-   if(counter === 0){
-      setCounter(0)
-   } else {
-      counter = counter - 1;
-      setCounter(counter)
-   }
-  }
+
 
   return (
-    <>
-     <h1>Sample</h1>
-     <h2>Count is: {counter}</h2>
-     <button onClick={addValue}>Increment</button>
-     <br />
-     <button onClick={subValue}>Decrement</button>
-
-    </>
+    <div className='w-full h-screen flex flex-col justify-center items-center' style={{backgroundColor: color}}>
+      <h1 className={`text-3xl font-bold underline text-${color}-500`}>
+        Hello world!
+      </h1>
+      <button 
+        className="mt-4 px-4 py-2 bg-green-500 text-white rounded"
+        onClick={() => setColor(color === "blue" ? "red" : "blue")}
+      >
+        Change Color
+      </button>
+      <button 
+        className="mt-4 px-4 py-2 bg-green-500 text-white rounded"
+        onClick={() => setColor(color === "blue" ? "red" : "blue")}
+      >
+        Change Color
+      </button>
+      <button 
+        className="mt-4 px-4 py-2 bg-green-500 text-white rounded"
+        onClick={() => setColor(color === "blue" ? "red" : "blue")}
+      >
+        Change Color
+      </button>
+      <button 
+        className="mt-4 px-4 py-2 bg-green-500 text-white rounded"
+        onClick={() => setColor(color === "blue" ? "red" : "blue")}
+      >
+        Change Color
+      </button>
+    </div>
   )
-}
+
+}  
+
 
 export default App
