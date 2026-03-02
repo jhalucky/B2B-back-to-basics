@@ -17,7 +17,41 @@ new Promise(function(resolve, reject) {
         resolve()
     },1000)
 }). then(function() {
+   console.log("Promise 2 has been resolved");
+   
+})
+
+
+const promiseThree = new Promise(function(resolve, reject) {
+   setTimeout(function() {
+    resolve({username: "Lucky Jha", email: "lucky@luckyworks.in"})
+   },1000)
+})
+
+promiseThree.then(function(user) {
+   console.log(user);
+   console.log("Bhak bsdk");
+   
+})
+
+const promiseFour = new Promise(function(resolve, reject){
     setTimeout(function() {
-        console.log("Promise 2 resolved");
+        let error = false
+        if(!error) {
+            resolve({username:"bsdk", fullform: "bade saaf dil ka"})
+        } else {
+            reject("ERROR: Something went wrong")
+        }
     },1000)
 })
+
+promiseFour.then(function(user){
+    console.log(user);
+    return user.username;
+}).then((username)=> {
+   console.log(username);
+   
+}).catch(function(error){
+    console.log(error);
+}).finally(() => console.log("Finally the error is either resolved or rejected")
+)
