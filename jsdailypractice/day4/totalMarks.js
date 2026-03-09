@@ -1,6 +1,7 @@
+const marks = [1,2,2,1,1,4,5,5,4]
+
 // How to calculate total marks out of given arr of marks using for loop
 
-// const marks = [1,2,2,1,1,4,5,5,4]
 
 // let totalMarks = 0
 
@@ -11,10 +12,9 @@
 // console.log(totalMarks);
 
 
+
+
 // using for...of loop
-
-
-// const marks = [1,2,2,1,1,4,5,5,4]
 
 // let totalMarks = 0
 
@@ -23,3 +23,16 @@
 // }
 
 // console.log(totalMarks);
+
+
+
+
+// using forEach loop
+
+let totalMarks = 0
+
+marks.forEach(mark => {
+    totalMarks+=mark
+})
+
+console.log(totalMarks);
