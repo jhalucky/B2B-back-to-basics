@@ -29,10 +29,19 @@ const marks = [1,2,2,1,1,4,5,5,4]
 
 // using forEach loop
 
-let totalMarks = 0
+// let totalMarks = 0
 
-marks.forEach(mark => {
-    totalMarks+=mark
-})
+// marks.forEach(mark => {
+//     totalMarks+=mark
+// })
 
-console.log(totalMarks);
+// console.log(totalMarks);
+
+
+// using reduce
+
+// const totalMarks = marks.reduce((sum, mark) => sum + mark, 0);
+
+// console.log(totalMarks);
+
+
