@@ -70,6 +70,15 @@ console.log(month);
 
 const monthList = ['January', 'Febrauaray', "March", "April", "May", "June", "July", "August", "September", "October", "Novemeber", "December" ]
 var year = today.getFullYear();
+
+
+if(date < 10 ) {
+    date = '0' + date;
+}
+
+if(month < 10) { 
+    month = '0' + month;
+}
 console.log(year);
 
 // to get name of the month
@@ -78,3 +87,12 @@ console.log(year);
 // console.log(date+"-"+monthList[month]+"-"+year);
 // console.log(date+"/"+monthList[month]+"/"+year);
 // console.log(date+"/"+monthList[month]+"/"+year);
+
+console.log(date+"/"+month+"/"+year);
+console.log(date+"-"+month+"-"+year);
+
+console.log(month+"/"+date+"/"+year);
+console.log(month+"-"+date+"-"+year);
+
+
+
