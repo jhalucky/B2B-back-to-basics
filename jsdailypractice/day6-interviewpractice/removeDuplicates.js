@@ -1,4 +1,5 @@
 function removeDuplicates(arr) {
+    
     console.log([...new Set(arr)]);
 }
 
