@@ -22,9 +22,28 @@
 
 
 
-// method 3: ternary inline operator
-const isPalindrome = (str) => str === str.split('').reverse().join('')
+// // method 3: ternary inline operator
+// const isPalindrome = (str) => str === str.split('').reverse().join('')
 
-console.log(isPalindrome("fuckoff") ? 'yes' : 'no');
+// console.log(isPalindrome("fuckoff") ? 'yes' : 'no');
 
+
+
+// Reverse the String
+
+
+// method: 1 Built-in function
+
+
+// function reverseString(str) {
+//     let reversedString = str.split('').reverse().join('')
+//     console.log(reversedString);
+// }
+// let str = "fuckoff"
+// reverseString(str)
+
+
+// method-2
+// let reversedString = str.split('').reverse().join('')
+// console.log(reversedString);
 
