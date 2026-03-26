@@ -1,5 +1,5 @@
 let button = document.getElementById("button")
-let mode = "dark";
+let mode = "green";
 let color;
 
 
